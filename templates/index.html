@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- ICONOS---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Luis Leiton</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Luis</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Inicio</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">Sobre Mi</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Proyectos</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn" id="show-cv-btn-nav">Descargar CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        
+        <!-- Ventana Modal -->
+        <div id="cv-modal-nav" class="modal">
+            <div class="modal-content">
+                <span class="close-btn-nav">&times;</span>
+                <iframe id="cv-frame-nav" src="/Downloads/CV LUIS LEITON.pdf" style="width: 100%; height: 600px;"></iframe>
+            </div>
+        </div>
+
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Luis Leiton</span>
+            </div>
+            <div class="featured-name">
+                <p>Soy <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Desarrollador full stack apasionado y comprometido con la excelencia. Con experiencia en análisis de software y frameworks como Django, busco crear soluciones eficientes e innovadoras. Mi objetivo es seguir creciendo, aportar valor a mi equipo y mantenerme a la vanguardia del desarrollo de software.</p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn" onclick="scrollToContact()">Contrátame</button>
+                <button class="btn" id="show-cv-btn">Descargar CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            
+            <!-- Ventana Modal -->
+            <div id="cv-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <iframe id="cv-frame" src="/Downloads/CV LUIS LEITON.pdf" style="width: 100%; height: 600px;"></iframe>
+                </div>
+            </div>
+            
+            <div class="social_icons">
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/luis-leiton-0b3964203/" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/RepositorioGitPersonal" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="/images/image.png" alt="imagen">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Desplázate</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>Sobre mi</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>Mi Introducción</h3>
+                    <p>Soy tecnólogo en Análisis y Desarrollo de Software, graduado del Centro de Diseño e Innovación Tecnológica Industrial de Dosquebradas. Apasionado por el desarrollo de software, soy creativo y comprometido con la mejora continua. Con experiencia en frameworks como Django, disfruto enfrentar nuevos desafíos y trabajar en equipo para crear soluciones innovadoras. Mi objetivo es seguir creciendo profesionalmente y aportar valor en cada proyecto.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>Vue</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>PHP</span>
+                        <span>JAVA</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>Workbench</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Proyectos</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completados</h3>
+                <label>Mas de 5 proyectos terminados</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clientes</h3>
+                <label>3 clientes satisfechos con mi trabajo</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experiencia</h3>
+                <label>6 meses en empresa</label>
+                <label>Mas de 1 año independiente</label>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Ponte en contacto conmigo</h1>
+            <span>¿Tienes algún proyecto en mente?, contáctame aquí</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Mis datos <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: luisalveiro298@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +57 301 405 9973</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Nombre">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Dejame tu mensaje aquí"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Enviar <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Luis Leiton .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">Sobre Mi</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Proyectos</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/luis-leiton-0b3964203/" target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/RepositorioGitPersonal" target="_blank">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
